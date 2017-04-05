@@ -193,7 +193,9 @@ a.site-btn{
   }
 }
 
+
 /*Navigation*/
+
 
 header{
 	position:fixed;
@@ -202,6 +204,18 @@ header{
 	padding:30px 0;
 	background: black;
 }
+
+.fa-thumbs-up{
+	-webkit-animation: flash 3s infinite;
+	 -moz-animation: flash 3s infinite;
+	 -o-animation: flash 3s infinite;
+ }
+
+.fa-thumbs-up:hover{
+	cursor: pointer; 
+	color: red;
+}
+
 
 .logo{
 	display: inline-block;
@@ -291,11 +305,23 @@ header{
 /*------------------------ 2 Home Section ------------------------*/	
 
 .home{
-	display: block;
-    width: 100%;
-    background: url(../images/home.jpg) no-repeat top;
-    background-size: cover;
+ 	display: block;
+	width: 100%;
+	background: url(../images/home.jpg) no-repeat top;
+	background-size: cover; 
 }
+
+
+/*fix profile picture in iphone look*/
+@media (max-width: 414px) {
+  .home{
+  display: block;
+  background: url(../images/home.jpg) no-repeat center;
+  background-size: 100% 78%;  
+  }
+}
+
+
 
 .home-inner {
     display: table;
@@ -374,7 +400,7 @@ header{
 	 -o-animation: bounce 2s infinite;
 }
 
-/*------------------------ 3 About Section ------------------------*/	
+------------------------ 3 About Section ------------------------	
 
 #about{
   float:left;
@@ -565,13 +591,13 @@ ul.skill-list h3 {
 }
 
 
-/*------------------------ 4 Portfolio Section ------------------------*/	
+/*------------------------ 4 Portfolio Section ------------------------	*/
 
 #portfolio{
 	width:100%;
 	background:#eceef1;
 	float:left;
-	height:1050px;
+	height:850px;
 }
 
 .portfolio_items .single_item img{ 
@@ -621,7 +647,7 @@ ul.skill-list h3 {
 
 .work-overlay h3{
 	font-size:24px;
-	margin-bottom:20px;
+	margin-top: -65px;
 }
 
 .work-overlay p{
@@ -820,7 +846,7 @@ ul.skill-list h3 {
 
 
 
-/*------------------------ 5 Portfolio Section ------------------------*/	
+/*------------------------ 5 Resume Section ------------------------*/	
 
 #resume{
 	width:100%;

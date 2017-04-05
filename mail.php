@@ -6,7 +6,7 @@ $con_message = $_POST['con_message'];
 
 
 
-$to = 'onurolker@gmail.com';  // add your email address
+$to = 'mian.wang.eit@gmail.com';  // add your email address
 $subject = 'Vcard User Query';
 
 $message = '<strong>Name : </strong>'.$con_name.'<br/><br/>';
